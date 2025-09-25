@@ -2,6 +2,8 @@
 
 # 📊 Emmanuel Daraja — Data Analyst Portfolio  
 
+📌 Explore my live portfolio website: 👉 [**View Portfolio Website**](https://edaraja.github.io/Data-Analyst-Portfolio-/)  
+
 Welcome to my **Data Analyst Portfolio**, showcasing real-world projects where I apply **Python, SQL, Excel, and Power BI** to transform raw data into actionable business insights.  
 
 ---
@@ -23,6 +25,8 @@ Strong problem-solving, critical thinking, and communication skills — experien
 ## 📊 Portfolio Projects  
 
 ### 🔹 Featured: Superstore Sales & Profit Analysis  
+![Superstore Executive Summary](https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png)  
+
 End-to-end retail analysis using Excel & Python. Includes dashboards, a reproducible Jupyter Notebook, and an **executive-ready summary slide**.  
 
 **Tools:** Excel · Python (pandas, matplotlib) · PowerPoint  
@@ -34,6 +38,8 @@ End-to-end retail analysis using Excel & Python. Includes dashboards, a reproduc
 ---
 
 ### 🔹 Sales Performance Dashboard  
+![Sales Dashboard](sales_dashboard.png)  
+
 Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.  
 
 **Tools:** Power BI · Excel  
@@ -41,6 +47,8 @@ Interactive dashboard tracking revenue, regional performance, and product mix ac
 ---
 
 ### 🔹 Forbes Billionaires Analysis (1997–2024)  
+![Forbes Analysis](forbes_analysis.png)  
+
 Analysis of global wealth distribution across industries and regions using Python.  
 
 **Tools:** Python (pandas, matplotlib)  
@@ -48,6 +56,8 @@ Analysis of global wealth distribution across industries and regions using Pytho
 ---
 
 ### 🔹 Automated Reporting Workflows  
+![Automation Workflow](automation.png)  
+
 ETL workflows automating data cleaning & analysis in Python, reducing reporting time by ~40%.  
 
 **Tools:** Python · ETL  
@@ -61,7 +71,7 @@ ETL workflows automating data cleaning & analysis in Python, reducing reporting 
 - Built interactive dashboards in Excel & Power BI, improving client revenue tracking.  
 - Conducted **Forbes Billionaires Analysis** (1997–2024) to highlight global wealth trends.  
 - Automated cleaning & exploratory workflows in Python, cutting reporting time by 40%.  
-- Developed forecasting models in Excel & Python for scenario analysis.  
+- Developed forecasting models in Excel & Python for business planning.  
 - Presented insights with clear visuals for non-technical stakeholders.  
 
 ---
