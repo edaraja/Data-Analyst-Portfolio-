@@ -26,64 +26,7 @@
     header p {
       margin: 5px 0;
       font-size: 1.1rem;
-    }                                                                                              
-    .project-card {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  margin-bottom: 28px;
-  padding: 16px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
-
-.project-card img {
-  width: 240px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.project-card h3 {
-  margin: 0 0 8px 0;
-  color: #0066cc;
-}
-
-.project-card p {
-  margin: 0 0 10px 0;
-  color: #333;
-  font-size: 15px;
-}
-
-.project-card .tools {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 12px;
-}
-
-.project-card a.button {
-  background: #0066cc;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 8px;
-}
-
-.project-card a.link {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 8px;
-}
-
+    }
     nav {
       margin-top: 10px;
     }
@@ -106,8 +49,54 @@
       border-bottom: 2px solid #0066cc;
       padding-bottom: 5px;
     }
-    .project {
-      margin-bottom: 20px;
+    .project-card {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+    .project-card img {
+      width: 240px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .project-card h3 {
+      margin: 0 0 8px 0;
+      color: #0066cc;
+    }
+    .project-card p {
+      margin: 0 0 10px 0;
+      color: #333;
+      font-size: 15px;
+    }
+    .project-card .tools {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+    }
+    .project-card a.button {
+      background: #0066cc;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+    .project-card a.link {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 8px;
     }
     .contact a {
       color: #0066cc;
@@ -126,14 +115,29 @@
 <body>
   <header>
     <h1>Emmanuel Daraja</h1>
+    <p>Turning Complex Data into Clear Business Insights</p>
     <p>Data Analyst | Python · SQL · Excel · Power BI</p>
     <nav>
-      <a href="#about">About</a>
+      <a href="#summary">Summary</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <section id="summary">
+    <h2>📌 Professional Summary</h2>
+    <p>
+      Results-driven Data Analyst with expertise in <b>Power BI, Excel, SQL, and Python</b>. 
+      Experienced in designing interactive dashboards, automating workflows, and delivering 
+      actionable insights from complex datasets. Skilled at translating business requirements 
+      into data-driven recommendations that improve decision-making, efficiency, and strategy. 
+      Strong in problem-solving, critical thinking, and communication, with experience working 
+      independently and across teams.
+    </p>
+  </section>
 
   <section id="about">
     <h2>👨‍💼 About Me</h2>
@@ -161,59 +165,91 @@
     </ul>
   </section>
 
- <section id="projects">
-  <h2>📊 Portfolio Projects</h2>
-
- <!-- Superstore Project Card -->
-<div class="project-card">
-  <img src="https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png"
-       alt="Superstore Executive Summary">
-  <div>
-    <h3>Key Drivers of Superstore Revenue & Profitability</h3>
-    <p>End-to-end retail analysis using Excel & Python. Includes pivot-driven dashboards, a reproducible Jupyter Notebook,
-    and an executive summary slide for stakeholders.</p>
-    <p class="tools"><strong>Tools:</strong> Excel · Python (pandas, matplotlib) · PowerPoint</p>
-    <a href="https://github.com/edaraja/superstore-sales-analysis" target="_blank" class="button">View Project</a>
-    <a href="Sales_Analysis.pptx" target="_blank" class="link">Download Slide</a>
-    <a href="Superstore_Case_Study_Emmanuel_Daraja.pdf" target="_blank" class="link">📑 Case Study PDF</a>
-  </div>
-</div>
-
-    ...
-
-  <!-- Project 2: Sales Performance Dashboard -->
-  <div class="project-card">
-    <img src="banner.png" alt="Sales Dashboard Thumbnail">
+  <section id="experience">
+    <h2>💼 Experience</h2>
     <div>
-      <h3>Sales Performance Dashboard</h3>
-      <p>Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.</p>
-      <p class="tools"><strong>Tools:</strong> Power BI · Excel</p>
-      <a href="#" target="_blank" class="button">View Project</a>
+      <h3>Freelance Data Analyst (Consultant)</h3>
+      <p><em>Nairobi, Kenya | Dec 2023 – Aug 2025</em></p>
+      <ul>
+        <li>Designed and implemented interactive sales dashboards in Excel & Power BI, improving client revenue tracking.</li>
+        <li>Conducted Forbes Billionaires Analysis (1997–2024) to identify global wealth, industry, and regional trends.</li>
+        <li>Automated data cleaning & exploratory analysis in Python, reducing reporting time by <b>40%</b>.</li>
+        <li>Built forecasting models in Excel & Python for scenario analysis & short-term business planning.</li>
+        <li>Presented insights via visual dashboards for non-technical stakeholders, improving decision-making.</li>
+      </ul>
     </div>
-  </div>
+  </section>
 
-  <!-- Project 3: Forbes Billionaires Analysis -->
-  <div class="project-card">
-    <img src="banner.png" alt="Forbes Analysis Thumbnail">
-    <div>
-      <h3>Forbes Billionaires Analysis (1997–2024)</h3>
-      <p>Analysis of global wealth distribution, industries, and regions over nearly three decades using Python.</p>
-      <p class="tools"><strong>Tools:</strong> Python (pandas, matplotlib)</p>
-      <a href="#" target="_blank" class="button">View Project</a>
-    </div>
-  </div>
+  <section id="projects">
+    <h2>📊 Portfolio Projects</h2>
 
-  <!-- Project 4: Automated Reporting -->
-  <div class="project-card">
-    <img src="banner.png" alt="Automation Workflow Thumbnail">
-    <div>
-      <h3>Automated Reporting Workflows</h3>
-      <p>Automated scripts for data cleaning, transformation, and analysis, reducing reporting time by ~30%.</p>
-      <p class="tools"><strong>Tools:</strong> Python · ETL</p>
-      <a href="#" target="_blank" class="button">View Project</a>
+    <!-- Project 1: Superstore -->
+    <div class="project-card">
+      <img src="https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png"
+           alt="Superstore Executive Summary">
+      <div>
+        <h3>Key Drivers of Superstore Revenue & Profitability</h3>
+        <p>End-to-end retail analysis using Excel & Python. Includes pivot-driven dashboards, a reproducible Jupyter Notebook, and an executive summary slide for stakeholders.</p>
+        <p class="tools"><strong>Tools:</strong> Excel · Python (pandas, matplotlib) · PowerPoint</p>
+        <a href="https://github.com/edaraja/superstore-sales-analysis" target="_blank" class="button">View Project</a>
+        <a href="Sales_Analysis.pptx" target="_blank" class="link">Download Slide</a>
+        <a href="Superstore_Case_Study_Emmanuel_Daraja.pdf" target="_blank" class="link">📑 Case Study PDF</a>
+      </div>
     </div>
-  </div>
-</section>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="sales_dashboard.png" alt="Sales Dashboard Thumbnail">
+      <div>
+        <h3>Sales Performance Dashboard</h3>
+        <p>Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.</p>
+        <p class="tools"><strong>Tools:</strong> Power BI · Excel</p>
+        <a href="#" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="forbes_analysis.png" alt="Forbes Analysis Thumbnail">
+      <div>
+        <h3>Forbes Billionaires Analysis (1997–2024)</h3>
+        <p>Analysis of global wealth distribution, industries, and regions over nearly three decades using Python.</p>
+        <p class="tools"><strong>Tools:</strong> Python (pandas, matplotlib)</p>
+        <a href="#" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <img src="automation.png" alt="Automation Workflow Thumbnail">
+      <div>
+        <h3>Automated Reporting Workflows</h3>
+        <p>Automated scripts for data cleaning, transformation, and analysis, reducing reporting time by ~30%.</p>
+        <p class="tools"><strong>Tools:</strong> Python · ETL</p>
+        <a href="#" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>🎓 Education</h2>
+    <p>
+      <b>BSc in Mathematics & Computer Science</b> (Minor: Applied Mathematics) – Taita Taveta University, 2023 <br>
+      <em>Graduated with Second Class Honors (Upper Division)</em> <br>
+      Relevant Coursework: Data Analysis, Statistics, Machine Learning, Programming, Databases
+    </p>
+  </section>
+
+  <section id="soft-skills">
+    <h2>🌟 Soft Skills</h2>
+    <ul>
+      <li>Critical thinking & problem-solving</li>
+      <li>Communication & presentation</li>
+      <li>Business requirements gathering</li>
+      <li>Attention to detail & accuracy</li>
+      <li>Time management & independent work</li>
+    </ul>
+  </section>
 
   <section id="contact" class="contact">
     <h2>📫 Contact Me</h2>
@@ -230,5 +266,3 @@
   </footer>
 </body>
 </html>
-
-
