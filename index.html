@@ -5,110 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emmanuel Daraja | Data Analyst Portfolio</title>
   <style>
+    :root {
+      --primary: #0066cc;
+      --secondary: #f0f4f9;
+      --dark: #333;
+      --light: #fff;
+    }
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      padding: 0;
       line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: var(--secondary);
+      color: var(--dark);
     }
+
+    /* Header */
     header {
-      background: #0066cc;
-      color: #fff;
-      padding: 20px 0;
+      background: var(--primary);
+      color: var(--light);
+      padding: 20px 0 10px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 5px 0;
-      font-size: 1.1rem;
-    }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 4px 0; font-size: 1.1rem; }
+
+    /* Nav */
     nav {
       margin-top: 10px;
     }
     nav a {
-      color: #fff;
+      color: var(--light);
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s;
     }
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    /* Sections */
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 30px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px 25px;
+      background: var(--light);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    section:nth-child(even) {
+      background: var(--secondary);
     }
     h2 {
-      color: #0066cc;
-      border-bottom: 2px solid #0066cc;
-      padding-bottom: 5px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 6px;
+      margin-bottom: 20px;
     }
+
+    /* Project Cards */
     .project-card {
       display: flex;
       gap: 18px;
       align-items: flex-start;
       margin-bottom: 28px;
-      padding: 16px;
-      background: #fff;
-      border-radius: 8px;
+      padding: 20px;
+      background: var(--light);
+      border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
     .project-card img {
       width: 240px;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      object-fit: cover;
     }
-    .project-card h3 {
-      margin: 0 0 8px 0;
-      color: #0066cc;
-    }
-    .project-card p {
-      margin: 0 0 10px 0;
-      color: #333;
-      font-size: 15px;
-    }
-    .project-card .tools {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 12px;
-    }
+    .project-card h3 { margin: 0 0 10px 0; color: var(--primary); }
+    .project-card p { margin: 0 0 12px 0; font-size: 15px; color: var(--dark); }
+    .project-card .tools { font-size: 14px; color: #666; margin-bottom: 12px; }
     .project-card a.button {
-      background: #0066cc;
-      color: #fff;
-      padding: 8px 12px;
+      background: var(--primary);
+      color: var(--light);
+      padding: 8px 14px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
-      margin-right: 8px;
+      margin-right: 10px;
+      transition: background 0.3s;
+    }
+    .project-card a.button:hover {
+      background: #004c99;
     }
     .project-card a.link {
-      color: #0066cc;
+      color: var(--primary);
       text-decoration: none;
       font-weight: 600;
-      margin-right: 8px;
+      margin-right: 10px;
     }
+
+    ul { padding-left: 20px; }
+
+    /* Contact */
     .contact a {
-      color: #0066cc;
+      color: var(--primary);
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Footer */
     footer {
-      background: #333;
-      color: #fff;
+      background: var(--dark);
+      color: var(--light);
       text-align: center;
-      padding: 15px 0;
-      margin-top: 20px;
+      padding: 18px 0;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -119,77 +139,47 @@
     <p>Data Analyst | Python · SQL · Excel · Power BI</p>
     <nav>
       <a href="#summary">Summary</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
+      <a href="#highlights">Highlights</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#education">Education</a>
+      <a href="#soft-skills">Soft Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- 🔹 Content Sections (same as before, but with new design) -->
   <section id="summary">
     <h2>📌 Professional Summary</h2>
     <p>
       Results-driven Data Analyst with expertise in <b>Power BI, Excel, SQL, and Python</b>. 
-      Experienced in designing interactive dashboards, automating workflows, and delivering 
-      actionable insights from complex datasets. Skilled at translating business requirements 
-      into data-driven recommendations that improve decision-making, efficiency, and strategy. 
-      Strong in problem-solving, critical thinking, and communication, with experience working 
-      independently and across teams.
+      Experienced in designing interactive dashboards, automating workflows, 
+      and delivering actionable insights from complex datasets. 
+      Skilled at translating business requirements into data-driven recommendations 
+      that improve decision-making, efficiency, and strategy.
     </p>
   </section>
 
-  <section id="about">
-    <h2>👨‍💼 About Me</h2>
-    <p>
-      Hi! I’m <strong>Emmanuel Daraja Wanyonyi</strong>, a Data Analyst with a 
-      <em>BSc in Mathematics & Computer Science (Applied Mathematics minor)</em>. 
-      I specialize in turning complex datasets into actionable insights and visual stories.
-    </p>
-    <p>
-      📍 Mlolongo, Machakos County, Kenya <br>
-      📧 <a href="mailto:edaraja578@gmail.com">edaraja578@gmail.com</a> <br>
-      📞 +254 794 749 147
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>🛠 Core Skills</h2>
+  <section id="highlights">
+    <h2>🌟 Highlights</h2>
     <ul>
-      <li><b>Data Visualization:</b> Power BI, Excel, Tableau, Google Data Studio</li>
-      <li><b>Programming & Analysis:</b> Python (pandas, numpy, matplotlib, seaborn), R (basic)</li>
-      <li><b>Databases & SQL:</b> SQL, MySQL, PostgreSQL, SQL Server</li>
-      <li><b>Data Processing:</b> Cleaning, ETL, Power Query</li>
-      <li><b>Statistics & Analytics:</b> Hypothesis Testing, Regression, Forecasting</li>
-      <li><b>Machine Learning:</b> scikit-learn (classification, regression, clustering)</li>
+      <li>4+ <b>end-to-end analytics projects</b> covering retail sales, automation, and global wealth analysis.</li>
+      <li>Converted business requirements into <b>data models, dashboards, and case studies</b>.</li>
+      <li>Proven ability to <b>communicate insights</b> for executives and non-technical teams.</li>
     </ul>
-  </section>
-
-  <section id="experience">
-    <h2>💼 Experience</h2>
-    <div>
-      <h3>Freelance Data Analyst (Consultant)</h3>
-      <p><em>Nairobi, Kenya | Dec 2023 – Aug 2025</em></p>
-      <ul>
-        <li>Designed and implemented interactive sales dashboards in Excel & Power BI, improving client revenue tracking.</li>
-        <li>Conducted Forbes Billionaires Analysis (1997–2024) to identify global wealth, industry, and regional trends.</li>
-        <li>Automated data cleaning & exploratory analysis in Python, reducing reporting time by <b>40%</b>.</li>
-        <li>Built forecasting models in Excel & Python for scenario analysis & short-term business planning.</li>
-        <li>Presented insights via visual dashboards for non-technical stakeholders, improving decision-making.</li>
-      </ul>
-    </div>
   </section>
 
   <section id="projects">
     <h2>📊 Portfolio Projects</h2>
 
-    <!-- Project 1: Superstore -->
+    <!-- Superstore Project -->
     <div class="project-card">
-      <img src="https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png"
-           alt="Superstore Executive Summary">
+      <img src="https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png" alt="Superstore Executive Summary">
       <div>
-        <h3>Key Drivers of Superstore Revenue & Profitability</h3>
-        <p>End-to-end retail analysis using Excel & Python. Includes pivot-driven dashboards, a reproducible Jupyter Notebook, and an executive summary slide for stakeholders.</p>
+        <h3>📑 Featured: Superstore Sales & Profit Analysis</h3>
+        <p>Retail analysis using Excel & Python with dashboards, a reproducible Jupyter Notebook, 
+           and an executive-ready summary slide for stakeholders.</p>
         <p class="tools"><strong>Tools:</strong> Excel · Python (pandas, matplotlib) · PowerPoint</p>
         <a href="https://github.com/edaraja/superstore-sales-analysis" target="_blank" class="button">View Project</a>
         <a href="Sales_Analysis.pptx" target="_blank" class="link">Download Slide</a>
@@ -197,7 +187,7 @@
       </div>
     </div>
 
-    <!-- Project 2 -->
+    <!-- Sales Dashboard -->
     <div class="project-card">
       <img src="sales_dashboard.png" alt="Sales Dashboard Thumbnail">
       <div>
@@ -208,52 +198,78 @@
       </div>
     </div>
 
-    <!-- Project 3 -->
+    <!-- Forbes Analysis -->
     <div class="project-card">
       <img src="forbes_analysis.png" alt="Forbes Analysis Thumbnail">
       <div>
         <h3>Forbes Billionaires Analysis (1997–2024)</h3>
-        <p>Analysis of global wealth distribution, industries, and regions over nearly three decades using Python.</p>
+        <p>Analysis of global wealth distribution across industries and regions using Python.</p>
         <p class="tools"><strong>Tools:</strong> Python (pandas, matplotlib)</p>
         <a href="#" target="_blank" class="button">View Project</a>
       </div>
     </div>
 
-    <!-- Project 4 -->
+    <!-- Automation -->
     <div class="project-card">
       <img src="automation.png" alt="Automation Workflow Thumbnail">
       <div>
         <h3>Automated Reporting Workflows</h3>
-        <p>Automated scripts for data cleaning, transformation, and analysis, reducing reporting time by ~30%.</p>
+        <p>ETL workflows automating data cleaning & analysis in Python, reducing reporting time by ~40%.</p>
         <p class="tools"><strong>Tools:</strong> Python · ETL</p>
         <a href="#" target="_blank" class="button">View Project</a>
       </div>
     </div>
   </section>
 
+   <section id="experience">
+    <h2>💼 Experience</h2>
+    <h3>Freelance Data Analyst (Consultant)</h3>
+    <p><em>Nairobi, Kenya | Dec 2023 – Aug 2025</em></p>
+    <ul>
+      <li>Built interactive dashboards in <b>Excel & Power BI</b>, improving client revenue tracking.</li>
+      <li>Conducted <b>Forbes Billionaires Analysis (1997–2024)</b> to highlight global wealth trends.</li>
+      <li>Automated cleaning & exploratory workflows in Python, cutting reporting time by <b>40%</b>.</li>
+      <li>Developed forecasting models in Excel & Python for business planning.</li>
+      <li>Presented insights with clear visuals for non-technical stakeholders.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>🛠 Core Skills</h2>
+    <ul>
+      <li><b>Visualization:</b> Power BI · Excel · Tableau · Google Data Studio</li>
+      <li><b>Programming & Analysis:</b> Python (pandas, numpy, matplotlib, seaborn) · R (basic)</li>
+      <li><b>Databases & SQL:</b> MySQL · PostgreSQL · SQL Server</li>
+      <li><b>Data Processing:</b> ETL · Power Query · Data Cleaning</li>
+      <li><b>Statistics & Analytics:</b> Hypothesis Testing · Regression · Forecasting</li>
+      <li><b>Machine Learning:</b> scikit-learn (classification, regression, clustering)</li>
+    </ul>
+  </section>
+
   <section id="education">
     <h2>🎓 Education</h2>
     <p>
-      <b>BSc in Mathematics & Computer Science</b> (Minor: Applied Mathematics) – Taita Taveta University, 2023 <br>
+      <b>BSc in Mathematics & Computer Science</b> (Minor: Applied Mathematics) — Taita Taveta University, 2023 <br>
       <em>Graduated with Second Class Honors (Upper Division)</em> <br>
-      Relevant Coursework: Data Analysis, Statistics, Machine Learning, Programming, Databases
+      Relevant Coursework: Data Analysis, Statistics, Machine Learning, Databases
     </p>
   </section>
 
   <section id="soft-skills">
-    <h2>🌟 Soft Skills</h2>
+    <h2>🤝 Business & Soft Skills</h2>
     <ul>
-      <li>Critical thinking & problem-solving</li>
-      <li>Communication & presentation</li>
-      <li>Business requirements gathering</li>
+      <li>Data storytelling for executives</li>
+      <li>Translating business needs into models & dashboards</li>
+      <li>Problem-solving under tight deadlines</li>
+      <li>Cross-functional communication</li>
       <li>Attention to detail & accuracy</li>
-      <li>Time management & independent work</li>
     </ul>
   </section>
 
   <section id="contact" class="contact">
     <h2>📫 Contact Me</h2>
     <p>
+      📍 Mlolongo, Machakos County, Kenya <br>
       📧 <a href="mailto:edaraja578@gmail.com">edaraja578@gmail.com</a><br>
       📞 +254 794 749 147<br>
       🔗 <a href="https://linkedin.com/in/emmanuel-daraja-254b35368">LinkedIn</a> | 
