@@ -22,22 +22,44 @@
       color: var(--dark);
     }
 
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: var(--light);
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .hero .cta-button {
+      background: #ffdd57;
+      color: #333;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .hero .cta-button:hover {
+      background: #ffc107;
+    }
+
     /* Header */
     header {
       background: var(--primary);
       color: var(--light);
-      padding: 20px 0 10px;
+      padding: 12px 0;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-    }
-    header h1 { margin: 0; font-size: 2rem; }
-    header p { margin: 4px 0; font-size: 1.1rem; }
-
-    /* Nav */
-    nav {
-      margin-top: 10px;
     }
     nav a {
       color: var(--light);
@@ -133,10 +155,17 @@
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
     <h1>Emmanuel Daraja</h1>
     <p>Turning Complex Data into Clear Business Insights</p>
     <p>Data Analyst | Python · SQL · Excel · Power BI</p>
+    <a href="#projects" class="cta-button">🚀 View My Projects</a>
+  </section>
+
+  <!-- Navigation -->
+  <header>
     <nav>
       <a href="#summary">Summary</a>
       <a href="#highlights">Highlights</a>
@@ -149,33 +178,33 @@
     </nav>
   </header>
 
-  <!-- 🔹 Content Sections (same as before, but with new design) -->
+  <!-- Summary -->
   <section id="summary">
     <h2>📌 Professional Summary</h2>
     <p>
-      Results-driven Data Analyst with expertise in <b>Power BI, Excel, SQL, and Python</b>. 
-      Experienced in designing interactive dashboards, automating workflows, 
-      and delivering actionable insights from complex datasets. 
-      Skilled at translating business requirements into data-driven recommendations 
-      that improve decision-making, efficiency, and strategy.
+      Data Analyst with expertise in <b>Power BI, Excel, SQL, and Python</b>. 
+      Skilled at transforming raw data into dashboards, automating workflows, 
+      and delivering executive-ready insights that improve decision-making and business performance.
     </p>
   </section>
 
+  <!-- Highlights -->
   <section id="highlights">
     <h2>🌟 Highlights</h2>
     <ul>
-      <li>4+ <b>end-to-end analytics projects</b> covering retail sales, automation, and global wealth analysis.</li>
+      <li>Delivered <b>4+ end-to-end analytics projects</b> (retail sales, automation, wealth analysis).</li>
       <li>Converted business requirements into <b>data models, dashboards, and case studies</b>.</li>
-      <li>Proven ability to <b>communicate insights</b> for executives and non-technical teams.</li>
+      <li>Strong communicator who <b>translates insights</b> for executives and teams.</li>
     </ul>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
     <h2>📊 Portfolio Projects</h2>
 
     <!-- Superstore Project -->
     <div class="project-card">
-      <img src="https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png" alt="Superstore Executive Summary">
+      <img src="executive_summary.png" alt="Superstore Executive Summary">
       <div>
         <h3>📑 Featured: Superstore Sales & Profit Analysis</h3>
         <p>Retail analysis using Excel & Python with dashboards, a reproducible Jupyter Notebook, 
@@ -194,7 +223,7 @@
         <h3>Sales Performance Dashboard</h3>
         <p>Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.</p>
         <p class="tools"><strong>Tools:</strong> Power BI · Excel</p>
-        <a href="#" target="_blank" class="button">View Project</a>
+        <a href="https://github.com/edaraja/sales-performance-dashboard" target="_blank" class="button">View Project</a>
       </div>
     </div>
 
@@ -205,7 +234,7 @@
         <h3>Forbes Billionaires Analysis (1997–2024)</h3>
         <p>Analysis of global wealth distribution across industries and regions using Python.</p>
         <p class="tools"><strong>Tools:</strong> Python (pandas, matplotlib)</p>
-        <a href="#" target="_blank" class="button">View Project</a>
+        <a href="https://github.com/edaraja/forbes-billionaires-analysis" target="_blank" class="button">View Project</a>
       </div>
     </div>
 
@@ -216,56 +245,60 @@
         <h3>Automated Reporting Workflows</h3>
         <p>ETL workflows automating data cleaning & analysis in Python, reducing reporting time by ~40%.</p>
         <p class="tools"><strong>Tools:</strong> Python · ETL</p>
-        <a href="#" target="_blank" class="button">View Project</a>
+        <a href="https://github.com/edaraja/automated-reporting" target="_blank" class="button">View Project</a>
       </div>
     </div>
   </section>
 
-   <section id="experience">
+  <!-- Experience -->
+  <section id="experience">
     <h2>💼 Experience</h2>
     <h3>Freelance Data Analyst (Consultant)</h3>
     <p><em>Nairobi, Kenya | Dec 2023 – Aug 2025</em></p>
     <ul>
       <li>Built interactive dashboards in <b>Excel & Power BI</b>, improving client revenue tracking.</li>
-      <li>Conducted <b>Forbes Billionaires Analysis (1997–2024)</b> to highlight global wealth trends.</li>
-      <li>Automated cleaning & exploratory workflows in Python, cutting reporting time by <b>40%</b>.</li>
+      <li>Conducted <b>Forbes Billionaires Analysis</b> to highlight global wealth trends.</li>
+      <li>Automated Python workflows, cutting reporting time by <b>40%</b>.</li>
       <li>Developed forecasting models in Excel & Python for business planning.</li>
       <li>Presented insights with clear visuals for non-technical stakeholders.</li>
     </ul>
   </section>
 
+  <!-- Skills -->
   <section id="skills">
     <h2>🛠 Core Skills</h2>
     <ul>
       <li><b>Visualization:</b> Power BI · Excel · Tableau · Google Data Studio</li>
-      <li><b>Programming & Analysis:</b> Python (pandas, numpy, matplotlib, seaborn) · R (basic)</li>
-      <li><b>Databases & SQL:</b> MySQL · PostgreSQL · SQL Server</li>
+      <li><b>Programming:</b> Python (pandas, numpy, matplotlib, seaborn) · R (basic)</li>
+      <li><b>Databases:</b> MySQL · PostgreSQL · SQL Server</li>
       <li><b>Data Processing:</b> ETL · Power Query · Data Cleaning</li>
-      <li><b>Statistics & Analytics:</b> Hypothesis Testing · Regression · Forecasting</li>
+      <li><b>Analytics:</b> Hypothesis Testing · Regression · Forecasting</li>
       <li><b>Machine Learning:</b> scikit-learn (classification, regression, clustering)</li>
     </ul>
   </section>
 
+  <!-- Education -->
   <section id="education">
     <h2>🎓 Education</h2>
     <p>
       <b>BSc in Mathematics & Computer Science</b> (Minor: Applied Mathematics) — Taita Taveta University, 2023 <br>
-      <em>Graduated with Second Class Honors (Upper Division)</em> <br>
-      Relevant Coursework: Data Analysis, Statistics, Machine Learning, Databases
+      <em>Graduated with Second Class Honors (Upper Division)</em>
     </p>
   </section>
 
+  <!-- Soft Skills -->
   <section id="soft-skills">
     <h2>🤝 Business & Soft Skills</h2>
     <ul>
       <li>Data storytelling for executives</li>
-      <li>Translating business needs into models & dashboards</li>
+      <li>Translating business needs into dashboards</li>
       <li>Problem-solving under tight deadlines</li>
       <li>Cross-functional communication</li>
       <li>Attention to detail & accuracy</li>
     </ul>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>📫 Contact Me</h2>
     <p>
