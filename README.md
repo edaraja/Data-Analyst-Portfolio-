@@ -21,24 +21,23 @@ Strong problem-solving, critical thinking, and communication skills — experien
 - ✅ Proven ability to **communicate insights** effectively to executives and non-technical teams.  
 
 ---
-
 ## 📊 Portfolio Projects  
 
 ### 🔹 Featured: Superstore Sales & Profit Analysis  
 ![Superstore Executive Summary](https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png)  
 
-End-to-end retail analysis using Excel & Python. Includes dashboards, a reproducible Jupyter Notebook, and an **executive-ready summary slide**.  
+Retail analysis using Excel & Python with dashboards, a reproducible Jupyter Notebook, and an **executive-ready summary slide**.  
 
 **Tools:** Excel · Python (pandas, matplotlib) · PowerPoint  
 
 🔗 [View Project Repo](https://github.com/edaraja/superstore-sales-analysis)  
-📥 [Download Slide](Sales_Analysis.pptx)  
-📑 [Read Case Study PDF](Superstore_Case_Study_Emmanuel_Daraja.pdf)  
+📥 [Download Slide](https://github.com/edaraja/superstore-sales-analysis/raw/main/Sales_Analysis.pptx)  
+📑 [Read Case Study PDF](https://github.com/edaraja/superstore-sales-analysis/raw/main/Superstore_Case_Study_Emmanuel_Daraja.pdf)  
 
 ---
 
 ### 🔹 Sales Performance Dashboard  
-![Sales Dashboard](sales_dashboard.png)  
+![Sales Dashboard](https://raw.githubusercontent.com/edaraja/Data-Analyst-Portfolio-/main/sales_dashboard.png)  
 
 Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.  
 
@@ -47,7 +46,7 @@ Interactive dashboard tracking revenue, regional performance, and product mix ac
 ---
 
 ### 🔹 Forbes Billionaires Analysis (1997–2024)  
-![Forbes Analysis](forbes_analysis.png)  
+![Forbes Analysis](https://raw.githubusercontent.com/edaraja/Data-Analyst-Portfolio-/main/forbes_analysis.png)  
 
 Analysis of global wealth distribution across industries and regions using Python.  
 
@@ -56,11 +55,12 @@ Analysis of global wealth distribution across industries and regions using Pytho
 ---
 
 ### 🔹 Automated Reporting Workflows  
-![Automation Workflow](automation.png)  
+![Automation Workflow](https://raw.githubusercontent.com/edaraja/Data-Analyst-Portfolio-/main/automation.png)  
 
 ETL workflows automating data cleaning & analysis in Python, reducing reporting time by ~40%.  
 
 **Tools:** Python · ETL  
+
 
 ---
 
