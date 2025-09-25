@@ -26,7 +26,64 @@
     header p {
       margin: 5px 0;
       font-size: 1.1rem;
-    }
+    }                                                                                              
+    .project-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.project-card img {
+  width: 240px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  margin: 0 0 8px 0;
+  color: #0066cc;
+}
+
+.project-card p {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.project-card .tools {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.project-card a.button {
+  background: #0066cc;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.project-card a.link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
     nav {
       margin-top: 10px;
     }
@@ -104,43 +161,78 @@
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>📊 Portfolio Projects</h2>
+ <section id="projects">
+  <h2>📊 Portfolio Projects</h2>
 
-    <div class="project">
-      <h3>1. Superstore Sales & Profit Analysis</h3>
-      <p><b>Tools:</b> Excel, Python, PowerPoint</p>
-      <p>
-        Dual-method analysis of sales & profit by region and category.  
-        Deliverables: Pivot tables, Jupyter Notebook, and an executive summary slide.
-      </p>
-      <a href="https://github.com/edaraja/superstore-sales-analysis">🔗 View Project Repo</a>
-    </div>
+  <!-- Superstore Project Card -->
+  <div class="project" style="display:flex; gap:18px; align-items:flex-start; margin-bottom:24px;">
+    <a href="https://github.com/edaraja/superstore-sales-analysis" target="_blank"
+       style="display:block; width:240px; text-decoration:none;">
+      <img src="https://raw.githubusercontent.com/edaraja/superstore-sales-analysis/main/executive_summary.png"
+           alt="Superstore Executive Summary" style="width:100%; border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,0.08);" />
+    </a>
 
-    <div class="project">
-      <h3>2. Sales Performance Dashboard</h3>
-      <p><b>Tools:</b> Power BI, Excel</p>
-      <p>
-        Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.
+    <div style="flex:1;">
+      <h3 style="margin:0 0 6px 0; color:#0066cc;">Key Drivers of Superstore Revenue & Profitability</h3>
+      <p style="margin:0 0 10px 0; color:#333;">
+        End-to-end retail analysis using Excel & Python. Includes pivot-driven dashboards, a reproducible Jupyter Notebook,
+        and an executive summary slide for stakeholders.
+      </p>
+      <p style="margin:0 0 12px 0; font-size:14px; color:#666;">
+        <strong>Tools:</strong> Excel · Python (pandas, matplotlib) · PowerPoint
+      </p>
+      <p style="margin:0;">
+        <a href="https://github.com/edaraja/superstore-sales-analysis" target="_blank"
+           style="background:#0066cc; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:600;">
+           View Project
+        </a>
+        &nbsp;
+        <a href="Sales_Analysis.pptx" target="_blank" style="color:#0066cc; text-decoration:none; font-weight:600;">
+           Download Slide
+        </a>
+        &nbsp;
+        <a href="Superstore_Case_Study_Emmanuel_Daraja.pdf" target="_blank" 
+           style="color:#0066cc; text-decoration:none; font-weight:600;">
+           📑 Case Study PDF
+        </a>
       </p>
     </div>
+  </div>
+    ...
 
-    <div class="project">
-      <h3>3. Forbes Billionaires Analysis (1997–2024)</h3>
-      <p><b>Tools:</b> Python (pandas, matplotlib)</p>
-      <p>
-        Analysis of global wealth distribution, industries, and regions over nearly three decades.
-      </p>
+  <!-- Project 2: Sales Performance Dashboard -->
+  <div class="project-card">
+    <img src="banner.png" alt="Sales Dashboard Thumbnail">
+    <div>
+      <h3>Sales Performance Dashboard</h3>
+      <p>Interactive dashboard tracking revenue, regional performance, and product mix across 3 years.</p>
+      <p class="tools"><strong>Tools:</strong> Power BI · Excel</p>
+      <a href="#" target="_blank" class="button">View Project</a>
     </div>
+  </div>
 
-    <div class="project">
-      <h3>4. Automated Reporting Workflows</h3>
-      <p><b>Tools:</b> Python (automation, ETL)</p>
-      <p>
-        Automated scripts for data cleaning, transformation, and analysis, reducing reporting time by ~30%.
-      </p>
+  <!-- Project 3: Forbes Billionaires Analysis -->
+  <div class="project-card">
+    <img src="banner.png" alt="Forbes Analysis Thumbnail">
+    <div>
+      <h3>Forbes Billionaires Analysis (1997–2024)</h3>
+      <p>Analysis of global wealth distribution, industries, and regions over nearly three decades using Python.</p>
+      <p class="tools"><strong>Tools:</strong> Python (pandas, matplotlib)</p>
+      <a href="#" target="_blank" class="button">View Project</a>
     </div>
-  </section>
+  </div>
+
+  <!-- Project 4: Automated Reporting -->
+  <div class="project-card">
+    <img src="banner.png" alt="Automation Workflow Thumbnail">
+    <div>
+      <h3>Automated Reporting Workflows</h3>
+      <p>Automated scripts for data cleaning, transformation, and analysis, reducing reporting time by ~30%.</p>
+      <p class="tools"><strong>Tools:</strong> Python · ETL</p>
+      <a href="#" target="_blank" class="button">View Project</a>
+    </div>
+  </div>
+</section>
 
   <section id="contact" class="contact">
     <h2>📫 Contact Me</h2>
@@ -157,3 +249,4 @@
   </footer>
 </body>
 </html>
+
